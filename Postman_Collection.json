@@ -1,0 +1,100 @@
+{
+  "info": {
+    "name": "APIs Productos y Categorías",
+    "description": "Colección de endpoints para pruebas de /api/productos/coot y /api/categoria/tron",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Productos",
+      "item": [
+        {
+          "name": "Poblar Productos (POST)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:4000/api/productos/poblar",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "productos",
+                "poblar"
+              ]
+            },
+            "description": "Carga masiva de productos desde FakeStoreAPI a la base de datos"
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener Productos Coot (GET)",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:4000/api/productos/coot",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "productos",
+                "coot"
+              ]
+            },
+            "description": "Obtiene productos que contengan 'coot' en el nombre o descripción"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Categorías",
+      "item": [
+        {
+          "name": "Obtener Categoría Tron (GET)",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:4000/api/categoria/tron",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "categoria",
+                "tron"
+              ]
+            },
+            "description": "Obtiene categorías que contengan 'tron' en el nombre o descripción"
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
